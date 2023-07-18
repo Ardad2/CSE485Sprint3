@@ -5,7 +5,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { StyleSheet, View } from 'react-native';
-import WeeklyCalendar from 'react-native-weekly-calendar';
+
+import WeeklyCalendar  from './components/Calendar/WeeklyCalendar';
+//import WeeklyCalendar from 'react-native-weekly-calendar';
 
 
 
@@ -136,7 +138,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <WeeklyCalendar events={sampleEvents} style={{ height: 400 }} />
+      <WeeklyCalendar events={sampleEvents} style={{ }} />
     </View>
   );
 }
