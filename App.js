@@ -109,7 +109,7 @@ function Navigation() {
   );
 }
 
-/*
+
 export default function App() {
 
 
@@ -120,8 +120,9 @@ export default function App() {
     </Provider>
   );
 }
-*/
 
+
+/*
 export default function App() {
   const sampleEvents = [
     { 'start': '2023-07-17 09:00:00', 'duration': '00:20:00', 'note': 'Walk my dog' },
@@ -143,7 +144,7 @@ export default function App() {
   );
 }
 
-
+*/
 
 const styles = StyleSheet.create({
   container: {

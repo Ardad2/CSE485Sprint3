@@ -27,6 +27,9 @@ export default function BehaviorFormScreen( {route, navigation} )
 
 
     const [enteredName, setEnteredName] = useState(behaviorName);
+
+    const [enteredNote, setEnteredNote] = useState('');
+    
     const [enteredIcon, setEnteredIcon] = useState('');
     const [enteredGoalCount, setEnteredGoalCount] = useState('');
     const [type, setType] = useState(behaviorName)
@@ -36,6 +39,12 @@ export default function BehaviorFormScreen( {route, navigation} )
       setEnteredName(enteredName);
     
       };
+
+      function noteInputHandler(enteredNote) {
+
+        setEnteredNote(enteredNote);
+      
+        };
 
     function iconInputHandler(enteredIcon) {
 
@@ -110,11 +119,11 @@ export default function BehaviorFormScreen( {route, navigation} )
         <Text style ={styles.textStyle}>Note</Text>
         <TextInput 
         style={styles.textInput} 
-        placeholder={behaviorName}
-        defaultValue={behaviorName}
+        placeholder={enteredNote}
+        defaultValue={enteredNote}
 
-         onChangeText={nameInputHandler}
-         value={enteredName}
+         onChangeText={noteInputHandler}
+         value={enteredNote}
          />
          <Text style ={styles.textStyle}>Icon and Color</Text>
          <TextInput 
