@@ -21,6 +21,15 @@ function SignupScreen() {
       const data = await createUser(email, password);
       
       console.log(data.idToken);
+
+      dispatch(addUser(
+        {
+          username: data.email,
+        }
+      ));
+       
+      
+
       dispatch(authenticateAuthTokens(
         {
           token: data.idToken,
